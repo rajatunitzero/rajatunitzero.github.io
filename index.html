@@ -3,54 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>HUNDREDHANDS — Design</title>
-    <style>
-      /* Base (mobile-first) */
-      html,body{height:100%;margin:0;font-family:Georgia, 'Times New Roman', serif;background:#fff;color:#111}
-      .wrap{max-width:980px;margin:36px auto;padding:24px 20px;position:relative}
-      .layout{display:grid;grid-template-columns:1fr;gap:20px;align-items:start}
-      .title{font-size:18px;letter-spacing:1px;margin:0 0 12px}
-      .lead{font-size:15px;line-height:1.5;color:#222;margin:0 0 12px}
-      .byline{font-style:italic;color:#333;margin-top:12px;font-size:13px}
-
-      /* image and logo scaling */
-      .wrap img{max-width:100%;height:auto;display:block}
-      .logo{width:220px;max-width:60%;height:auto;margin-bottom:18px}
-
-      /* visual panel */
-      .blue-box{width:100%;height:220px;background:#8bb6cf;border:1px solid #7aa8bf;display:flex;align-items:center;justify-content:center;padding:18px}
-
-      /* nav & copyright — stack on mobile */
-      .nav{position:static;margin-top:22px;font-size:13px;line-height:1.8}
-      .nav a{display:inline-block;margin-right:18px;color:#111;text-decoration:none}
-      .copyright{margin-top:18px;font-size:12px;color:#666}
-
-      /* Tablet and up */
-      @media(min-width:640px){
-        .wrap{padding:32px 28px;margin:48px auto}
-        .layout{grid-template-columns:1fr 360px;gap:28px}
-        .blue-box{height:320px;padding:20px}
-        .logo{width:260px}
-        .nav{position:absolute;left:28px;bottom:28px;margin-top:0}
-        .nav a{display:block;margin:0 0 6px}
-        .copyright{position:absolute;right:28px;bottom:24px;margin-top:0}
-      }
-
-      /* Desktop wide */
-      @media(min-width:1024px){
-        .wrap{padding:40px 36px}
-        .layout{grid-template-columns:1fr 420px;gap:32px}
-        .blue-box{height:420px}
-        .logo{width:320px}
-      }
-    </style>
+    <title>Studio Unit Zero</title>
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <main class="wrap">
+    <main class="wrap"> 
+      <img src="./assets/Logo.jpg" class="logo" alt="Logo" />
       <div class="layout">
-        <div>
-            <img src="./assets/Logo.PNG" alt="Logo" style="width: 350px; height: auto; margin-bottom: 24px" />
-          <h1 class="title">Studio Unit Zero</h1>
+        <div class="left">
           <p class="lead">
             Studio Unit Zero is an independent architectural design studio
             formed as a collaborative platform for exploring ideas, space, and
@@ -66,16 +26,16 @@
 
         <figure class="blue-box">
           <img
-            src="assets/e3ce5c163615043.63e9236fef42e.jpg"
+            src="assets/66ANDC-151_REPORT _page-0013 -X.jpg"
             alt="project illustration"
           />
         </figure>
       </div>
 
       <nav class="nav">
+        <a href="./about.html">ABOUT</a>
         <a href="./work.html">WORK</a>
-        <a href="#">PRACTICE</a>
-        <a href="#">CONTACT</a>
+        <a href="./contact.html">CONTACT</a>
       </nav>
 
       <div class="copyright">© Studio Unit Zero</div>

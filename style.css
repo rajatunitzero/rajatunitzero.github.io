@@ -1,0 +1,45 @@
+/* Base (mobile-first) */
+      html,body{height:100%;margin:0;font-family:'Gill Sans', 'Gill Sans MT', serif;background:#fff;color:#111}
+      .wrap{max-width:980px;margin:36px auto;padding:24px 20px;position:relative}
+      .layout{display:flex;flex-direction:row;gap:20px;align-items:center}
+      
+      .left{display:flex;flex-direction:column;justify-content:center;}
+      .title{font-size:18px;letter-spacing:1px;margin:0 0 12px}
+      .lead{text-align: justify; font-size:15px;line-height:1.5;color:#222;margin:0 0 12px;}
+      .byline{font-style:italic;color:#333;margin-top:12px;font-size:13px}
+
+      /* image and logo scaling */
+      .wrap img{max-width:100%;height:auto;display:block}
+      .logo{ width: 150px!important;max-width:20%;height: auto;;margin-bottom:45px}
+
+      /* Grid - 5 column configuration */
+      .grid{display:grid;grid-template-columns:repeat(5, 1fr);gap:16px;margin:24px 0}
+      .grid a{display:block;overflow:hidden;border-radius:4px}
+      .grid img{width:100%;height:auto;display:block;transition:transform 0.3s ease}
+      .grid a:hover img{transform:scale(1.05)}
+
+      /* nav & copyright — stack on mobile */ 
+      .nav1{font-size:13px;line-height:1.8;}
+      .nav1 a{display:inline-block;margin-right:18px;color:#111;text-decoration:none}  
+      .nav{font-size:13px;line-height:1.8;}
+      .nav a{display:inline-block;margin-right:18px;color:#111;text-decoration:none}
+      .copyright{margin-top:18px;font-size:12px;color:#666}
+
+      /* Tablet and up */
+      @media(min-width:640px){
+        .wrap{padding:32px 28px;margin:48px auto}
+        .layout{grid-template-columns:1fr 360px;gap:28px}
+        .blue-box{height:320px;padding:20px}
+        .logo{width:260px}
+        .nav{left:28px;bottom:0px;margin-top:0}
+        .nav a{display:block;margin:0 0 6px}
+        .copyright{position:absolute;right:28px;bottom:24px;margin-top:0}
+      }
+
+      /* Desktop wide */
+      @media(min-width:1024px){
+        .wrap{padding:40px 36px}
+        .layout{grid-template-columns:1fr 420px;gap:32px}
+        .blue-box{height:420px}
+        .logo{width:320px}
+      }

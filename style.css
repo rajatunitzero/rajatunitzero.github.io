@@ -13,12 +13,6 @@
       .wrap img{max-width:100%;height:auto;display:block}
       .logo{ width: 150px!important;max-width:20%;height: auto;;margin-bottom:45px}
 
-      /* Grid - 5 column configuration */
-      /* .grid{display:grid;grid-template-columns:repeat(5, 1fr);gap:16px;margin:24px 0}
-      .grid a{display:block;overflow:hidden;border-radius:4px}
-      .grid img{width:100%;height:auto;display:block;transition:transform 0.3s ease}
-      .grid a:hover img{transform:scale(1.05)} */
-
       .grid{
 
         /* height: 100%; */

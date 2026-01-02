@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Studio Unit Zero</title>
     <link rel="stylesheet" href="./style.css">
-    <style>
+    <!-- <style>
       .arc img{
         cursor:pointer;
         transition:transform .22s cubic-bezier(.2,.9,.3,1) .08s, filter .22s cubic-bezier(.2,.9,.3,1) .08s, opacity .18s ease;
@@ -19,7 +19,24 @@
         /* filter:blur(1px);
         opacity:; */
       }
-    </style>
+      /* Disable hover for projects 4-9 (INTERIOR DESIGN section) */
+      .cat-con:nth-child(2) .arc img:nth-child(1),
+      .cat-con:nth-child(2) .arc img:nth-child(2),
+      .cat-con:nth-child(2) .arc img:nth-child(3),
+      .cat-con:nth-child(2) .arc img:nth-child(4),
+      .cat-con:nth-child(2) .arc img:nth-child(5),
+      .cat-con:nth-child(2) .arc img:nth-child(6){
+        cursor: default;
+      }
+      .cat-con:nth-child(2) .arc img:nth-child(1).hover-swap,
+      .cat-con:nth-child(2) .arc img:nth-child(2).hover-swap,
+      .cat-con:nth-child(2) .arc img:nth-child(3).hover-swap,
+      .cat-con:nth-child(2) .arc img:nth-child(4).hover-swap,
+      .cat-con:nth-child(2) .arc img:nth-child(5).hover-swap,
+      .cat-con:nth-child(2) .arc img:nth-child(6).hover-swap{
+        transform:scale(1) !important;
+      }
+    </style> -->
   </head>
   <body>
     <main class="wrap"> 
@@ -100,7 +117,7 @@
 
       <div class="copyright">© Studio Unit Zero</div>
     </main>
-    <script>
+    <!-- <script>
       document.addEventListener('DOMContentLoaded', function(){
         const imgs = document.querySelectorAll('.arc img');
         imgs.forEach(img => {
@@ -157,6 +174,6 @@
           }, {passive:false});
         });
       });
-    </script>
+    </script> -->
   </body>
 </html>
